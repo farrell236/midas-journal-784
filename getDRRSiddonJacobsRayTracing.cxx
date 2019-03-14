@@ -441,7 +441,7 @@ int main( int argc, char *argv[] )
 	InterpolatorType::Pointer interpolator = InterpolatorType::New();
 
 	interpolator->SetProjectionAngle( dtr * rprojection ); // Set angle between projection central axis and -z axis
-	interpolator->Setscd(scd); // Set source to isocenter distance
+	interpolator->SetFocalPointToIsocenterDistance(scd); // Set source to isocenter distance
 	interpolator->SetThreshold(threshold); // Set intensity threshold, below which are ignored.
 	interpolator->SetTransform(transform);
 

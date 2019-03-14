@@ -695,7 +695,7 @@ int main( int argc, char *argv[] )
 
 	// 2D Image 1
 	interpolator1->SetProjectionAngle( dtr*projAngle1 );
-	interpolator1->Setscd(scd);
+	interpolator1->SetFocalPointToIsocenterDistance(scd);
 	interpolator1->SetThreshold(threshold);
 	interpolator1->SetTransform(transform);
 
@@ -703,7 +703,7 @@ int main( int argc, char *argv[] )
 
 	// 2D Image 2
 	interpolator2->SetProjectionAngle( dtr*projAngle2 );
-	interpolator2->Setscd(scd);
+	interpolator2->SetFocalPointToIsocenterDistance(scd);
 	interpolator2->SetThreshold(threshold);
 	interpolator2->SetTransform(transform);
 
